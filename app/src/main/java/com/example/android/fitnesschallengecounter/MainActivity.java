@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (scorePushUpsContestant1 != pushUps) {
                 scorePushUpsContestant1 += 1;
                 displayPushUpsDone1(scorePushUpsContestant1);
-            }
-        }
+            } else Toast.makeText(this, R.string.maxSets, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, R.string.sets, Toast.LENGTH_SHORT).show();
     }
 
     public void squatsContestant1(View view) {
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (scoreSquatsContestant1 != squats) {
                 scoreSquatsContestant1 += 1;
                 displaySquatsDone1(scoreSquatsContestant1);
-            }
-        }
+            } else Toast.makeText(this, R.string.maxSets, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, R.string.sets, Toast.LENGTH_SHORT).show();
     }
 
     public void absContestant1(View view) {
@@ -124,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (scoreAbsContestant1 != abs) {
                 scoreAbsContestant1 += 1;
                 displayAbsDone1(scoreAbsContestant1);
-            }
-        }
+            } else Toast.makeText(this, R.string.maxSets, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, R.string.sets, Toast.LENGTH_SHORT).show();
     }
 
     public void pushUpsContestant2(View view) {
@@ -138,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (scorePushUpsContestant2 != pushUps) {
                 scorePushUpsContestant2 += 1;
                 displayPushUpsDone2(scorePushUpsContestant2);
-            }
-        }
+            } else Toast.makeText(this, R.string.maxSets, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, R.string.sets, Toast.LENGTH_SHORT).show();
     }
 
     public void squatsContestant2(View view) {
@@ -152,8 +152,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (scoreSquatsContestant2 != squats) {
                 scoreSquatsContestant2 += 1;
                 displaySquatsDone2(scoreSquatsContestant2);
-            }
-        }
+            } else Toast.makeText(this, R.string.maxSets, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, R.string.sets, Toast.LENGTH_SHORT).show();
     }
 
     public void absContestant2(View view) {
@@ -166,8 +166,8 @@ public class MainActivity extends AppCompatActivity {
             } else if (scoreAbsContestant2 != abs) {
                 scoreAbsContestant2 += 1;
                 displayAbsDone2(scoreAbsContestant2);
-            }
-        }
+            } else Toast.makeText(this, R.string.maxSets, Toast.LENGTH_SHORT).show();
+        } else Toast.makeText(this, R.string.sets, Toast.LENGTH_SHORT).show();
     }
 
     //reset button
@@ -271,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
             start = true;
             startButton.setBackgroundResource(R.color.trans);
             startButton.setTextColor(ContextCompat.getColor(this, R.color.viewColor));
-        }
+        } else Toast.makeText(this, R.string.start, Toast.LENGTH_SHORT).show();
     }
 
     //finish button
@@ -297,7 +297,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             finish = true;
-        }
+        } else Toast.makeText(this, R.string.finish, Toast.LENGTH_SHORT).show();
     }
 
     public void displayWinnerContestant1(View view) {
