@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37c1b8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorButtonNormal">#e100ffcc</color>
+    <color name="textColorScore">#fa1d8f</color>
+    <color name="viewColor">@android:color/darker_gray</color>
+    <color name="winnerColor">#05e6bc</color>
+    <color name="trans">#00000000 </color>
+</resources>

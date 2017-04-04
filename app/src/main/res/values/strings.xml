@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fitness Challenge Counter</string>
+    <string name="name">Your Name</string>
+    <string name="challenge1">p u s h - u p s</string>
+    <string name="challenge1_sets">Sets of 15 Reps</string>
+    <string name="challenge2">j u m p i n g \u0020 s q u a t s</string>
+    <string name="challenge2_sets">Sets of 20 Reps</string>
+    <string name="challenge3">a b \u0020 c r u n c h e s</string>
+    <string name="challenge3_sets">Sets of 30 Reps</string>
+</resources>
