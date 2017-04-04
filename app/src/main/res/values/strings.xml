@@ -7,4 +7,8 @@
     <string name="challenge2_sets">Sets of 20 Reps</string>
     <string name="challenge3">a b \u0020 c r u n c h e s</string>
     <string name="challenge3_sets">Sets of 30 Reps</string>
+    <string name="start">set some exercise sets first</string>
+    <string name="sets">hit the START button first</string>
+    <string name="maxSets">you reached max sets to be done</string>
+    <string name="finish">you can\'t finish. do some exercise !</string>
 </resources>
