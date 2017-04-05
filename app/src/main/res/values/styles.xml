@@ -93,13 +93,14 @@
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
-
+        <item name="android:text">+</item>
     </style>
 
     <style name="setsButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:text">+1 SET</item>
     </style>
 
     <style name="bigButtonStyle">
@@ -121,7 +122,7 @@
         <item name="android:background">@color/viewColor</item>
     </style>
 
-    <style name="viewStyleOrizontal">
+    <style name="viewStyleHorizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:layout_centerInParent">true</item>
