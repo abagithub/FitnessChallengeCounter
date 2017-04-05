@@ -8,236 +8,219 @@
     android:scrollbarStyle="insideInset"
     android:scrollbars="vertical">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_main"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.android.fitnesschallengecounter.MainActivity">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout style="@style/alignment">
-
-                <LinearLayout
-                    style="@style/layoutStyle"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/contestant1_name"
-                        style="@style/nameStyle" />
-
-                    <TextView
-                        android:id="@+id/contestant1_score"
-                        style="@style/ScoreStyle" />
-
-                </LinearLayout>
-
-                <View style="@style/viewStyleVertical" />
-
-                <LinearLayout
-                    style="@style/layoutStyle"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/contestant2_name"
-                        style="@style/nameStyle" />
-
-                    <TextView
-                        android:id="@+id/contestant2_score"
-                        style="@style/ScoreStyle" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <View style="@style/viewStyleOrizontal" />
-
-
-            <TextView
-                style="@style/textStyle1"
-                android:text="@string/challenge1" />
+        <LinearLayout style="@style/alignment">
 
             <LinearLayout
-                style="@style/alignment"
-                android:background="@color/viewColor">
+                style="@style/layoutStyle"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/incrementButton1"
-                    style="@style/incrementButton"
-                    android:onClick="pushUpsSets"
-                    android:text="+" />
+                <EditText
+                    android:id="@+id/contestant1_name"
+                    style="@style/nameStyle" />
 
                 <TextView
-                    android:id="@+id/pushUpsSets"
-                    style="@style/numberOfSets" />
-
-                <TextView
-                    style="@style/textStyle2"
-                    android:text="@string/challenge1_sets" />
+                    android:id="@+id/contestant1_score"
+                    style="@style/ScoreStyle" />
 
             </LinearLayout>
 
-            <LinearLayout style="@style/alignment">
-
-                <Button
-                    android:id="@+id/pushUpsButton1"
-                    style="@style/setsButton"
-                    android:onClick="pushUpsContestant1"
-                    android:text="+1 set" />
-
-                <TextView
-                    android:id="@+id/pushUpsContestant1"
-                    style="@style/setsScore" />
-
-                <View style="@style/viewStyleVertical" />
-
-                <TextView
-                    android:id="@+id/pushUpsContestant2"
-                    style="@style/setsScore" />
-
-                <Button
-                    android:id="@+id/pushUpsButton2"
-                    style="@style/setsButton"
-                    android:onClick="pushUpsContestant2"
-                    android:text="+1 set" />
-
-            </LinearLayout>
-
-            <View style="@style/viewStyleOrizontal" />
-
-
-            <TextView
-                style="@style/textStyle1"
-                android:text="@string/challenge2" />
+            <View style="@style/viewStyleVertical" />
 
             <LinearLayout
-                style="@style/alignment"
-                android:background="@color/viewColor">
+                style="@style/layoutStyle"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/incrementButton2"
-                    style="@style/incrementButton"
-                    android:onClick="squatsSets"
-                    android:text="+" />
+                <EditText
+                    android:id="@+id/contestant2_name"
+                    style="@style/nameStyle" />
 
                 <TextView
-                    android:id="@+id/squatsSets"
-                    style="@style/numberOfSets" />
-
-                <TextView
-                    style="@style/textStyle2"
-                    android:text="@string/challenge2_sets" />
+                    android:id="@+id/contestant2_score"
+                    style="@style/ScoreStyle" />
 
             </LinearLayout>
 
-            <LinearLayout style="@style/alignment">
-
-                <Button
-                    android:id="@+id/squatsButton1"
-                    style="@style/setsButton"
-                    android:onClick="squatsContestant1"
-                    android:text="+1 set" />
-
-                <TextView
-                    android:id="@+id/squatsContestant1"
-                    style="@style/setsScore" />
-
-                <View style="@style/viewStyleVertical" />
-
-                <TextView
-                    android:id="@+id/squatsContestant2"
-                    style="@style/setsScore" />
-
-                <Button
-                    android:id="@+id/squatsButton2"
-                    style="@style/setsButton"
-                    android:onClick="squatsContestant2"
-                    android:text="+1 set" />
-
-            </LinearLayout>
-
-            <View style="@style/viewStyleOrizontal" />
-
-
-            <TextView
-                style="@style/textStyle1"
-                android:text="@string/challenge3" />
-
-            <LinearLayout
-                style="@style/alignment"
-                android:background="@color/viewColor">
-
-                <Button
-                    android:id="@+id/incrementButton3"
-                    style="@style/incrementButton"
-                    android:onClick="absSets"
-                    android:text="+" />
-
-                <TextView
-                    android:id="@+id/absSets"
-                    style="@style/numberOfSets" />
-
-                <TextView
-                    style="@style/textStyle2"
-                    android:text="@string/challenge3_sets" />
-
-            </LinearLayout>
-
-            <LinearLayout style="@style/alignment">
-
-                <Button
-                    android:id="@+id/absButton1"
-                    style="@style/setsButton"
-                    android:onClick="absContestant1"
-                    android:text="+1 set" />
-
-                <TextView
-                    android:id="@+id/absContestant1"
-                    style="@style/setsScore" />
-
-                <View style="@style/viewStyleVertical" />
-
-                <TextView
-                    android:id="@+id/absContestant2"
-                    style="@style/setsScore" />
-
-                <Button
-                    android:id="@+id/absButton2"
-                    style="@style/setsButton"
-                    android:onClick="absContestant2"
-                    android:text="+1 set" />
-
-            </LinearLayout>
-
-            <View style="@style/viewStyleOrizontal" />
-
-            <LinearLayout
-                style="@style/alignment"
-                android:layout_marginTop="5dp">
-
-                <Button
-                    android:id="@+id/reset"
-                    style="@style/bigButtonStyle"
-                    android:onClick="reset"
-                    android:text="Reset" />
-
-                <Button
-                    android:id="@+id/start"
-                    style="@style/bigButtonStyle"
-                    android:onClick="start"
-                    android:text="Start" />
-
-                <Button
-                    android:id="@+id/finish"
-                    style="@style/bigButtonStyle"
-                    android:onClick="finish"
-                    android:text="Finish" />
-            </LinearLayout>
         </LinearLayout>
 
-    </RelativeLayout>
+        <View style="@style/viewStyleHorizontal" />
+
+
+        <TextView
+            style="@style/textStyle1"
+            android:text="@string/challenge1" />
+
+        <LinearLayout
+            style="@style/alignment"
+            android:background="@color/viewColor">
+
+            <Button
+                android:id="@+id/incrementButton1"
+                style="@style/incrementButton"
+                android:onClick="pushUpsSets" />
+
+            <TextView
+                android:id="@+id/pushUpsSets"
+                style="@style/numberOfSets" />
+
+            <TextView
+                style="@style/textStyle2"
+                android:text="@string/challenge1_sets" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/alignment">
+
+            <Button
+                android:id="@+id/pushUpsButton1"
+                style="@style/setsButton"
+                android:onClick="pushUpsContestant1" />
+
+            <TextView
+                android:id="@+id/pushUpsContestant1"
+                style="@style/setsScore" />
+
+            <View style="@style/viewStyleVertical" />
+
+            <TextView
+                android:id="@+id/pushUpsContestant2"
+                style="@style/setsScore" />
+
+            <Button
+                android:id="@+id/pushUpsButton2"
+                style="@style/setsButton"
+                android:onClick="pushUpsContestant2" />
+
+        </LinearLayout>
+
+        <View style="@style/viewStyleHorizontal" />
+
+
+        <TextView
+            style="@style/textStyle1"
+            android:text="@string/challenge2" />
+
+        <LinearLayout
+            style="@style/alignment"
+            android:background="@color/viewColor">
+
+            <Button
+                android:id="@+id/incrementButton2"
+                style="@style/incrementButton"
+                android:onClick="squatsSets" />
+
+            <TextView
+                android:id="@+id/squatsSets"
+                style="@style/numberOfSets" />
+
+            <TextView
+                style="@style/textStyle2"
+                android:text="@string/challenge2_sets" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/alignment">
+
+            <Button
+                android:id="@+id/squatsButton1"
+                style="@style/setsButton"
+                android:onClick="squatsContestant1" />
+
+            <TextView
+                android:id="@+id/squatsContestant1"
+                style="@style/setsScore" />
+
+            <View style="@style/viewStyleVertical" />
+
+            <TextView
+                android:id="@+id/squatsContestant2"
+                style="@style/setsScore" />
+
+            <Button
+                android:id="@+id/squatsButton2"
+                style="@style/setsButton"
+                android:onClick="squatsContestant2" />
+
+        </LinearLayout>
+
+        <View style="@style/viewStyleHorizontal" />
+
+
+        <TextView
+            style="@style/textStyle1"
+            android:text="@string/challenge3" />
+
+        <LinearLayout
+            style="@style/alignment"
+            android:background="@color/viewColor">
+
+            <Button
+                android:id="@+id/incrementButton3"
+                style="@style/incrementButton"
+                android:onClick="absSets" />
+
+            <TextView
+                android:id="@+id/absSets"
+                style="@style/numberOfSets" />
+
+            <TextView
+                style="@style/textStyle2"
+                android:text="@string/challenge3_sets" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/alignment">
+
+            <Button
+                android:id="@+id/absButton1"
+                style="@style/setsButton"
+                android:onClick="absContestant1" />
+
+            <TextView
+                android:id="@+id/absContestant1"
+                style="@style/setsScore" />
+
+            <View style="@style/viewStyleVertical" />
+
+            <TextView
+                android:id="@+id/absContestant2"
+                style="@style/setsScore" />
+
+            <Button
+                android:id="@+id/absButton2"
+                style="@style/setsButton"
+                android:onClick="absContestant2" />
+
+        </LinearLayout>
+
+        <View style="@style/viewStyleHorizontal" />
+
+        <LinearLayout
+            style="@style/alignment"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/reset"
+                style="@style/bigButtonStyle"
+                android:onClick="reset"
+                android:text="@string/resetButton" />
+
+            <Button
+                android:id="@+id/start"
+                style="@style/bigButtonStyle"
+                android:onClick="start"
+                android:text="@string/startButton" />
+
+            <Button
+                android:id="@+id/finish"
+                style="@style/bigButtonStyle"
+                android:onClick="finish"
+                android:text="@string/finishButton" />
+        </LinearLayout>
+    </LinearLayout>
+
 </ScrollView>
